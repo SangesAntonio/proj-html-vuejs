@@ -1,15 +1,22 @@
 <template>
   <div id="app">
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <Header class="" />
+    <main>
+      <Jumbotron />
+    </main>
+    <footer>ciao</footer>
   </div>
 </template>
 
 <script>
+import Header from "./components/Header.vue";
+import Jumbotron from "./components/Jumbotron.vue";
 export default {
   name: "App",
-  components: {},
+  components: {
+    Header,
+    Jumbotron,
+  },
 };
 </script>
 
