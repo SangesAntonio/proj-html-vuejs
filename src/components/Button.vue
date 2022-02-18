@@ -13,7 +13,8 @@ export default {
 
 <style scoped land='scss'>
 .btn {
-  font-size: 12px;
+  font-size: 15px;
+  font-weight: bold;
   margin-left: 20px;
   color: white;
   background-color: #ef6f31;

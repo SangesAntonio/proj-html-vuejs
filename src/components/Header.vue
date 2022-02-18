@@ -1,8 +1,13 @@
 <template>
   <div>
     <div class="timer text-center d-flex justify-content-center">
-      <p>start tomorrow at 00:00:00...</p>
-      <Button action="Get Ticket" childclass="px-4 py-0" />
+      <p class="timer-text">
+        Start TOMORROW! Our biggest event of the year...<i
+          class="fa-regular fa-clock text-black px-3"
+        ></i>
+        <span class="text-black fw-bold">00 : 00 : 00</span>
+      </p>
+      <Button action="Get Ticket" childclass="px-4 py-1" class="ps-4" />
     </div>
     <div class="container-sm my-4">
       <div class="bottom-header row">
@@ -33,6 +38,7 @@
 import Button from "./Button.vue";
 export default {
   name: "Header",
+
   components: {
     Button,
   },
@@ -72,6 +78,12 @@ export default {
 <style scoped lang='scss'>
 .timer {
   background-color: #f4f0ef;
+  padding: 10px 0;
+  .timer-text {
+    color: #797979;
+    font-weight: normal;
+    font-size: 16px;
+  }
 }
 .decoratione-cs {
   list-style-type: none;
