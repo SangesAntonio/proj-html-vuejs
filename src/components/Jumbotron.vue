@@ -33,19 +33,26 @@
       src="../assets/img/artist-hero-image-04.jpg"
       alt=""
     />
-    <TitleSections
-      titleOne="Hello, Im Martin"
-      titleTwo="Artist Coaching And Mentoring Migth be For You."
-    />
+    <div class="title-container">
+      <TitleSections
+        classname=""
+        titleOne="Hello, Im Martin"
+        titleTwo="Artist Coaching And Mentoring Migth be For You."
+      />
+      <Button action="Get started today" childclass="px-5 py-3" />
+    </div>
   </div>
 </template>
 
 <script>
+import Button from "./Button.vue";
+
 import TitleSections from "./TitleSections.vue";
 export default {
   name: "Jumbotron",
   components: {
     TitleSections,
+    Button,
   },
 };
 </script>
@@ -59,21 +66,10 @@ export default {
   justify-content: center;
   align-items: center;
 
-  .title-jumbo {
-    width: 30%;
-
-    .fancy-title {
-      color: #029fcc;
-      font-size: 2.6rem;
-      font-family: "Dancing Script", cursive;
-    }
-    .second-title {
-      font-weight: bold;
-      font-size: 2.4rem;
-      margin-bottom: 50px;
-    }
+  .title-container {
+    text-align: center;
+    width: 600px;
   }
-
   img {
     position: absolute;
   }

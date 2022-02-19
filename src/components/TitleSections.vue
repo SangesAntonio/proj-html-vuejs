@@ -1,28 +1,23 @@
 <template>
   <div class="text-center title-jumbo">
-    <h1 :class="{ className }" class="fancy-title">{{ titleOne }}</h1>
-    <h1 :class="{ className }" class="second-title">
+    <h1 :class="className" class="fancy-title">{{ titleOne }}</h1>
+    <h1 :class="className" class="second-title">
       {{ titleTwo }}
     </h1>
-    <Button action="Get started today" childclass="px-5 py-3" />
   </div>
 </template>
 
 <script>
-import Button from "./Button.vue";
-
 export default {
   name: "titleSections",
-  props: ["titleOne", "titleTwo", " className"],
-  components: {
-    Button,
-  },
+  props: ["titleOne", "titleTwo", "className"],
+  components: {},
 };
 </script>
 
 <style scoped lang='scss'>
 .title-jumbo {
-  width: 30%;
+  width: 600px;
 
   .fancy-title {
     color: #029fcc;
