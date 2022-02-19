@@ -19,4 +19,8 @@ export default {
   color: white;
   background-color: #ef6f31;
 }
+.btn-clear {
+  background-color: #fdf0ea;
+  color: #ef6f31;
+}
 </style>

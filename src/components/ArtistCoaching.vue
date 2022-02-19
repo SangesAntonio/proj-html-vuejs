@@ -1,5 +1,15 @@
 <template>
-  <div class="row mt-4">
+  <div class="row mt-4 position-relative">
+    <img
+      src="../assets/img/maxcoach-shape-03.png"
+      class="position-absolute img-back"
+      alt=""
+    />
+    <img
+      src="../assets/img/maxcoach-shape-13-100x100.png"
+      class="position-absolute sand"
+      alt=""
+    />
     <div class="col d-flex justify-content-center">
       <TitleSections
         titleOne="ArtistCoaching"
@@ -8,7 +18,7 @@
         className="fw-normal"
       />
     </div>
-    <div class="col-12 d-flex justify-content-center pt-3">
+    <div class="col-12 d-flex justify-content-center pt-3 mb-4">
       <CardCoaching
         v-for="(card, index) in cards"
         :key="index"
@@ -17,17 +27,50 @@
         :info="card.paragraph"
       />
     </div>
+    <div class="container-sm mt-4">
+      <div class="row justify-content-center">
+        <div class="col-4 text-center">
+          <img
+            src="../assets/img/artist-quote-icon.png"
+            class="img-fluid"
+            alt=""
+          />
+          <h1 class="lh-base fw-bold w-75 m-auto pt-4">
+            I coach and mentor visual artists, like <br />
+            you, to Create Like <br />
+            You Mean It
+          </h1>
+          <h1 class="fancy pt-4">Martin Garrix</h1>
+        </div>
+        <div class="col-4 pt-4">
+          <p class="lh-lg pt-5 paragraph">
+            As a coach and mentor, my ultimate goal is to motivate visual
+            artists toward inspired action. I helpP you get you back on track to
+            being the productive, creative, meaningful and authentic artist you
+            truly want to be.l support artists in crafting and living a creative
+            life as well as feeling good about themselves and their art. <br />
+            <br />
+            As an artist and an educator for nearly 30 years, I understand what
+            it takes to create.
+          </p>
+          <Button action="Get started Today" childclass="btn-clear p-3  px-4" />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import TitleSections from "./TitleSections.vue";
 import CardCoaching from "./CardCoaching.vue";
+import Button from "./Button.vue";
+
 export default {
   name: "ArtistCoaching",
   components: {
     TitleSections,
     CardCoaching,
+    Button,
   },
   data() {
     return {
@@ -63,4 +106,26 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+.img-back {
+  z-index: 2;
+  opacity: 0.3;
+}
+.sand {
+  width: 200px;
+  height: auto;
+  right: -30px;
+  top: 20%;
+}
+.fancy {
+  font-family: "Festive", cursive;
+  color: #029fcc;
+}
+h1 {
+  font-size: 2.9rem;
+}
+.paragraph {
+  text-align: start;
+  color: rgb(100, 99, 99);
+  font-size: 1.1rem;
+}
 </style>
