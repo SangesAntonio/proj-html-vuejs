@@ -12,15 +12,25 @@
       </div>
       <div class="row mt-4 justify-content-between p-4">
         <CardSlide
-          class="col-3"
+          class="col-3 hide-card"
           v-for="(card, index) in testimonials"
           :key="index"
+          :class="{ activeslide: setCurrentImg(index) }"
           :title="card.titleOne"
           :paragraph="card.parag"
           :imag="card.imag"
           :name="card.name"
           :role="card.role"
         />
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <div
+            v-for="(card, index) in testimonials"
+            :key="index"
+            class="dots mx-3"
+            :class="{ active: setCurrentImg(index) }"
+            @click="getCurrentIndex(index)"
+          ></div>
+        </div>
       </div>
     </div>
   </div>
@@ -64,7 +74,16 @@ export default {
           role: "Multimedia Admin",
         },
       ],
+      currentIndex: "",
     };
+  },
+  methods: {
+    getCurrentIndex(index) {
+      this.currentIndex = index;
+    },
+    setCurrentImg(index) {
+      return this.currentIndex === index;
+    },
   },
 };
 </script>
@@ -76,5 +95,24 @@ export default {
 }
 .bg-color {
   background-color: #faf8f6;
+}
+.hide-card {
+  opacity: 0.5;
+}
+.activeslide {
+  opacity: 1;
+}
+.dots {
+  height: 10px;
+  width: 10px;
+  background-color: rgb(202, 196, 196);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 100px;
+}
+.active {
+  background-color: rgb(34, 33, 33);
+  height: 13px;
+  width: 13px;
 }
 </style>

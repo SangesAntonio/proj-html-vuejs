@@ -7,7 +7,7 @@
         <div class="col-md-3">
           <img
             :src="require(`../assets/img/${imag}`)"
-            class="img-fluid rounded-cs"
+            class="img-fluid w-75 rounded-cs"
             alt="..."
           />
         </div>
