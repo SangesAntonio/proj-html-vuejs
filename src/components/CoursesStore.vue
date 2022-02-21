@@ -1,6 +1,6 @@
 <template>
   <div class="container-cs">
-    <div class="row">
+    <div class="row mb-4">
       <div class="col-12 pt-4">
         <TitleSections
           class="mx-auto mt-4"
@@ -23,7 +23,7 @@
           />
         </div>
       </div>
-      <div class="col-12 text-center">
+      <div class="col-12 text-center mt-4 mb-4">
         <Button
           class="mx-auto"
           action="view all courses "

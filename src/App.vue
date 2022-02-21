@@ -17,7 +17,9 @@
       <section id="online-courses">
         <CoursesStore />
       </section>
-      <section id="blog-articles"></section>
+      <section id="blog-articles">
+        <Blog />
+      </section>
     </main>
     <footer>ciao</footer>
   </div>
@@ -30,6 +32,7 @@ import ArtistCoaching from "./components/ArtistCoaching.vue";
 import Youtube from "./components/Youtube.vue";
 import Slider from "./components/Slider.vue";
 import CoursesStore from "./components/CoursesStore.vue";
+import Blog from "./components/Blog.vue";
 
 export default {
   name: "App",
@@ -40,6 +43,7 @@ export default {
     Youtube,
     Slider,
     CoursesStore,
+    Blog,
   },
 };
 </script>
