@@ -14,6 +14,10 @@
       <section id="testimonials">
         <Slider />
       </section>
+      <section id="online-courses">
+        <CoursesStore />
+      </section>
+      <section id="blog-articles"></section>
     </main>
     <footer>ciao</footer>
   </div>
@@ -25,6 +29,7 @@ import Jumbotron from "./components/Jumbotron.vue";
 import ArtistCoaching from "./components/ArtistCoaching.vue";
 import Youtube from "./components/Youtube.vue";
 import Slider from "./components/Slider.vue";
+import CoursesStore from "./components/CoursesStore.vue";
 
 export default {
   name: "App",
@@ -34,6 +39,7 @@ export default {
     ArtistCoaching,
     Youtube,
     Slider,
+    CoursesStore,
   },
 };
 </script>

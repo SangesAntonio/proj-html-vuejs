@@ -109,6 +109,7 @@ export default {
   border-radius: 50%;
   cursor: pointer;
   margin-top: 100px;
+  margin-bottom: 100px;
 }
 .active {
   background-color: rgb(34, 33, 33);

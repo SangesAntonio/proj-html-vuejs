@@ -1,13 +1,15 @@
 <template>
   <div>
-    <button type="button" :class="childclass" class="btn">{{ action }}</button>
+    <button type="button" :class="childclass" class="btn">
+      {{ action }} <i :class="icon"></i>
+    </button>
   </div>
 </template>
 
 <script>
 export default {
   name: "Button",
-  props: ["action", "childclass"],
+  props: ["action", "childclass", "icon"],
 };
 </script>
 
