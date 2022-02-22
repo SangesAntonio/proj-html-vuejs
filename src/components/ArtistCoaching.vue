@@ -2,7 +2,7 @@
   <div class="row mt-4 position-relative">
     <img
       src="../assets/img/maxcoach-shape-03.png"
-      class="position-absolute"
+      class="position-absolute img-back"
       alt=""
     />
     <img

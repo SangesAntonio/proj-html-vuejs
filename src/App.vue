@@ -20,12 +20,13 @@
       <section id="blog-articles">
         <Blog />
       </section>
-      <section>
+      <section id="event-list">
         <Events />
       </section>
     </main>
     <footer>
-      <Banner />
+      <Banner id="newsletter-input" />
+      <BottomFooter id="utils-link" />
     </footer>
   </div>
 </template>
@@ -40,6 +41,7 @@ import CoursesStore from "./components/CoursesStore.vue";
 import Blog from "./components/Blog.vue";
 import Events from "./components/Events.vue";
 import Banner from "./components/footer/Banner.vue";
+import BottomFooter from "./components/footer/BottomFooter.vue";
 
 export default {
   name: "App",
@@ -53,6 +55,7 @@ export default {
     Blog,
     Events,
     Banner,
+    BottomFooter,
   },
 };
 </script>

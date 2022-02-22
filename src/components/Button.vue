@@ -21,6 +21,10 @@ export default {
   color: white;
   background-color: #ef6f31;
 }
+.btn:hover {
+  background-color: #5688f3;
+  color: white;
+}
 .btn-clear {
   background-color: #fdf0ea;
   color: #ef6f31;

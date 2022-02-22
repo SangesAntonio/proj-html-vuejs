@@ -41,6 +41,7 @@ export default {
 <style scoped lang='scss'>
 .bg-banner {
   margin-top: 80px;
+  margin-bottom: 80px;
   width: 100%;
   height: 200px;
   background-color: #244186;

@@ -12,7 +12,7 @@
         class="col-6 p-4"
         v-for="(event, index) in events"
         :key="index"
-        :classRow="event[index] === '2' || '3'"
+        :class="index < 2 ? '' : 'flex-row-reverse'"
         :imag="event.imag"
         :date="event.date"
         :title="event.title"
