@@ -20,8 +20,13 @@
       <section id="blog-articles">
         <Blog />
       </section>
+      <section>
+        <Events />
+      </section>
     </main>
-    <footer>ciao</footer>
+    <footer>
+      <Banner />
+    </footer>
   </div>
 </template>
 
@@ -33,6 +38,8 @@ import Youtube from "./components/Youtube.vue";
 import Slider from "./components/Slider.vue";
 import CoursesStore from "./components/CoursesStore.vue";
 import Blog from "./components/Blog.vue";
+import Events from "./components/Events.vue";
+import Banner from "./components/footer/Banner.vue";
 
 export default {
   name: "App",
@@ -44,6 +51,8 @@ export default {
     Slider,
     CoursesStore,
     Blog,
+    Events,
+    Banner,
   },
 };
 </script>
