@@ -23,7 +23,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-3">
+        <div class="col-3 text-rig">
           <i class="fa-brands fa-twitter"></i>
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-instagram"></i>
@@ -76,6 +76,9 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+.text-rig {
+  text-align: right;
+}
 .over-cs:hover {
   color: #ef6f31;
 }
