@@ -1,5 +1,5 @@
 <template>
-  <div class="jumbotron">
+  <div class="jumbotron position-relative">
     <img class="dots-left" src="../assets/img/artist-shape-03.png" alt="" />
     <img
       class="silouette-left"
@@ -40,6 +40,11 @@
         titleTwo="Artist Coaching And Mentoring Migth be For You."
       />
       <Button action="Get started today" childclass="px-5 py-3" />
+    </div>
+    <div class="options-right">
+      <i class="fa-solid fa-ruler-combined"></i>
+      <i class="fa-solid fa-futbol"></i><i class="fa-solid fa-book"></i
+      ><i class="fa-solid fa-cart-shopping"></i>
     </div>
   </div>
 </template>
@@ -108,5 +113,24 @@ export default {
 }
 .shadow-img {
   box-shadow: 0 0 20px -3px rgba(0, 0, 0, 0.589);
+}
+
+.options-right {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.356);
+  padding: 5px;
+  background-color: white;
+  width: 40px;
+  height: 150px;
+  border-radius: 5px;
+  position: fixed;
+  z-index: 3;
+  flex-direction: column;
+  align-items: center;
+  right: 0;
+  text-align: center;
+  i {
+    font-size: 18px;
+    padding-bottom: 15px;
+  }
 }
 </style>

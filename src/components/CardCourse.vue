@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="position-relative">
     <figure class="">
       <img :src="require(`../assets/img/${imag}`)" class="img-fluid" alt="" />
     </figure>
 
-    <div class="px-4">
+    <div class="px-4 over-cs">
       <p class="price-color fw-bold">${{ price }}</p>
       <h4 class="">{{ title }}</h4>
       <div class="d-flex mt-4">
@@ -27,6 +27,14 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+.over-cs {
+  border: 1px solid rgba(255, 255, 255, 0);
+  background-color: white;
+}
+.over-cs:hover {
+  border: 1px solid orange;
+  transform: translate(-10, -15);
+}
 h4 {
   font-size: 20px;
   font-weight: 500;

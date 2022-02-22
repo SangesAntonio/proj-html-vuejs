@@ -8,11 +8,11 @@
     />
     <img
       src="../assets/img/maxcoach-shape-03.png"
-      class="position-absolute img-back"
+      class="position-absolute img-back w-vw"
       alt=""
     />
     <img
-      src="../assets/img/maxcoach-shape-05-150x150.png"
+      src="../assets/img/maxcoach-shape-05-100x100.png"
       class="position-absolute img-back left-30"
       alt=""
     />
@@ -79,6 +79,9 @@ export default {
 }
 .img-back {
   z-index: 0;
+}
+.w-vw {
+  width: 99vw;
 }
 .index-cs {
   z-index: 2;

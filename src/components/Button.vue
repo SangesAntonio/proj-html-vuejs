@@ -29,4 +29,8 @@ export default {
   background-color: #fdf0ea;
   color: #ef6f31;
 }
+.btn-clear:hover {
+  background-color: #ef6f31;
+  color: #fdf0ea;
+}
 </style>

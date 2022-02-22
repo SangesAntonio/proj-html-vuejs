@@ -17,7 +17,7 @@
         <div class="col-6">
           <ul class="d-flex decoratione-cs">
             <li class="me-4" v-for="(item, index) in navbar" :key="index">
-              <a href=""
+              <a href="" class="over-cs"
                 >{{ item.text }} <i class="ms-2 fa-solid fa-chevron-down"></i
               ></a>
             </li>
@@ -76,6 +76,9 @@ export default {
 </script>
 
 <style scoped lang='scss'>
+.over-cs:hover {
+  color: #ef6f31;
+}
 .timer {
   background-color: #f4f0ef;
   padding: 10px 0;

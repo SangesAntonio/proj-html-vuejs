@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-4 position-relative">
+  <div class="row justify-content-center gx-0">
     <img
       src="../assets/img/maxcoach-shape-03.png"
       class="position-absolute img-back"
@@ -10,25 +10,29 @@
       class="position-absolute sand"
       alt=""
     />
-    <div class="col d-flex justify-content-center">
+    <div class="col-12">
       <TitleSections
+        class="mx-auto"
         titleOne="ArtistCoaching"
         titleTwo="I understand what it takes to create.
             I can help you with"
         className="fw-normal"
       />
     </div>
-    <div class="col-12 d-flex justify-content-center pt-3 mb-4">
-      <CardCoaching
-        v-for="(card, index) in cards"
-        :key="index"
-        :imag="card.img"
-        :title="card.title"
-        :info="card.paragraph"
-      />
+    <div class="col-10">
+      <div class="row justify-content-center">
+        <CardCoaching
+          class="col-3"
+          v-for="(card, index) in cards"
+          :key="index"
+          :imag="card.img"
+          :title="card.title"
+          :info="card.paragraph"
+        />
+      </div>
     </div>
     <div class="container-sm mt-4">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center gx-0">
         <div class="col-4 text-center">
           <img
             src="../assets/img/artist-quote-icon.png"
@@ -113,7 +117,7 @@ export default {
 .sand {
   width: 200px;
   height: auto;
-  right: -30px;
+  right: 0px;
   top: 20%;
 }
 .fancy {

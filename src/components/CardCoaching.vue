@@ -1,5 +1,5 @@
 <template>
-  <div class="card border-0" style="width: 18rem">
+  <div class="card border-0">
     <img :src="require(`../assets/img/${imag}`)" class="card-img-top" alt="" />
     <div class="card-body">
       <h5 class="card-title">{{ title }}</h5>

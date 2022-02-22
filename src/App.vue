@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <Header class="" />
+    <Header id="header" />
     <main>
       <section id="introduction-jumbotron">
         <Jumbotron />
       </section>
-      <section id="artist-coaching">
+      <section id="artist-coaching" class="position-relative">
         <ArtistCoaching />
       </section>
       <section id="youtube">

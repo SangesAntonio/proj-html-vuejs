@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center position-relative youtube">
+  <div class="text-center position-relative youtube">
     <img
       src="../assets/img/maxcoach-shape-12-150x150.png"
       class="cs-img-dot"
