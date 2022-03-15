@@ -74,7 +74,7 @@ export default {
           role: "Multimedia Admin",
         },
       ],
-      currentIndex: "",
+      currentIndex: "0",
     };
   },
   methods: {
